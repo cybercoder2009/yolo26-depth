@@ -1,0 +1,10 @@
+[package]
+name = "yolo26-depth"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+ultralytics-inference = { path = "./inference", features = ["cuda", "cuda-preprocess"] }
+v4l = { version = "0.14.0" }
+image = { version = "0.25.10" }
+minifb = { version = "0.27" }
